@@ -36,7 +36,7 @@ const createOrder = async (req, res) => {
       },
       body: JSON.stringify({
         data: {
-          amount: 1,
+          amount: req.body.amount,
           currency: "USD",
           lang: "EN",
         },
