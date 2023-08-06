@@ -39,9 +39,8 @@ const createOrder = async (req, res) => {
           amount: req.body.amount,
           currency: "USD",
           lang: "EN",
-          callback: "https://webhook.site/72f6e7e5-fed4-41da-b7fb-fe464e09ff2c",
-          callbackError:
-            "https://webhook.site/72f6e7e5-fed4-41da-b7fb-fe464e09ff2c",
+          callback: req.body.callback,
+          callbackError: req.body.callbackError,
         },
         method: "justPay",
         apiKey: API_KEY,
