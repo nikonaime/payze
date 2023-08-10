@@ -11,7 +11,11 @@ const MONGO_URL = process.env.MONGO_URL;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
 var corsOptions = {
-  origin: [FRONTEND_URL, "http://localhost:3000"],
+  origin: [
+    FRONTEND_URL,
+    "http://localhost:3000",
+    "https://success-page-git-main-nikonaime.vercel.app",
+  ],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
