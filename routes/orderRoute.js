@@ -12,7 +12,7 @@ const router = express.Router();
 
 router.get("/:id", getOrder);
 
-router.get("/status", getStatus);
+router.post("/status", getStatus);
 
 router.get("/", getOrders);
 
