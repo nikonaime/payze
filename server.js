@@ -15,7 +15,7 @@ var corsOptions = {
     FRONTEND_URL,
     "http://localhost:3000",
     "https://success-page-git-main-nikonaime.vercel.app",
-    "https://success-page.vercel.app/success",
+    "https://success-page.vercel.app",
   ],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
