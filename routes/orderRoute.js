@@ -6,10 +6,13 @@ const {
   createOrder,
   updateOrder,
   deleteOrder,
+  getStatus
 } = require("../controllers/orderController");
 const router = express.Router();
 
 router.get("/:id", getOrder);
+
+router.get("/status", getStatus);
 
 router.get("/", getOrders);
 
